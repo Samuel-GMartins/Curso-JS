@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS</title>
+</head>
+<body>
+    <h1>Sistema De Controle Nacional</h1>
+   Pais: <input type="text" name="txtpais" id="txtpais">
+   <input type="button" value="Verificar" onclick="verificar()">
+   <input type="button" value="Limpar" onclick="window.location.reload()">
+   <div id="res">
+
+   </div>
+   <script>
+
+       function verificar() {
+        var txtp = window.document.getElementById('txtpais')
+        var res = window.document.querySelector('div#res')
+        var ppp = String(txtp.value)
+        res.innerHTML = `<p>Se você mora no ${ppp}</strong><p>`
+        if(ppp == 'Brasil') {
+            res.innerHTML += `<p>Você é <strong>Brasileiro</strong> !</p>`
+        }
+        else {
+        res.innerHTML += `<p>Você é Estrangeiro</p>`
+        }
+    }
+   </script>
+</body>
+</html>

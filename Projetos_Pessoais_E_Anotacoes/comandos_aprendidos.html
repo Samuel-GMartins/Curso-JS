@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos_Aprendidos</title>
+    <style>
+        body{
+            background-color: rgb(186, 243, 174);
+            color: rgb(0, 0, 0);
+            font: normal 20 pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <script> 
+    var nome = window.prompt("Qual é o seu nome? ")
+    document.writeln(`<h1>Olá <strong>${nome}</strong> ! Seja bem vindo(a) a minha página de projetos.<br/></h1>`)
+    document.writeln(`O seu nome contém ${nome.length} letras,<br/>
+    Em letras maiúsculas, ele fica assim: ${nome.toLocaleUpperCase()}<br/>
+    Em letras minúsculas, ele fica assim: ${nome.toLowerCase()}<br/>`) // Conta quantas letras, Deixa as letras maiúsculas e minúsculas, respectivamente
+
+    window.alert('Valor calcular sua receita mensal!')
+    var rec1 = Number(window.prompt('Digite sua 1° receita: R$ '))
+    var rec2 = Number(window.prompt('Digite sua 2° receita: R$ '))
+    var sal = rec1+rec2
+    //sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    saldol = sal*5.10 // Convertendo o salário final para dollar, usando multiplicação 
+    saleur = sal*5.67 // Convertendo o salário final para euro, usando multiplicação 
+
+    document.writeln(`Fazendo os cálculos, somando todas os valores,<br/>
+    Temos a Receita Bruta Mensal de <strong>${    sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // Esse comando, serve para converter o 'number' para Moeda
+}</strong></br>
+Com a cotação do Dólar à R$ 5,10 e o Euro à R$ 5.67;<br/>
+no câmbio, você teria respectivamente:<br/>
+ ${saldol.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br/>
+${saleur.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}`)
+
+    </script>
+</body>
+</html>
