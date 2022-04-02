@@ -17,21 +17,29 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
 }
 
+div {
+    text-align: center;
+    padding: 8px;
+}
+
 footer {
     color: white;
-    text-align: center;
-    font-style: italic;
+    text-align: center;    
 }
 
 footer a {
     text-decoration: none;
     color: rgb(5, 6, 26);
     padding: 5px;
+}
 
+footer p {
+    margin-top: 8px;
 }
 
 footer a:hover {
     text-decoration:underline;
     background: rgba(0, 0, 0, 0.507);
     border-radius: 5px;
+    font-style: italic;
 }
