@@ -1,5 +1,6 @@
+
 body {
-    background: rgb(65, 65, 231);
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     font: normal 15pt arial;
 }
 
