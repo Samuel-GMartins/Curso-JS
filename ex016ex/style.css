@@ -1,0 +1,63 @@
+body {
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;    
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+}
+#flista{
+    width: 150px;
+}
+
+
+
+#botao {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+#botao:hover {
+    background-color: rgba(150, 159, 235, 0.404);
+    text-decoration: underline;
+}
+
+select {
+    padding: 20px;
+    border-color: rgba(0,0,0,.3);
+}
+
+select::-webkit-scrollbar {
+    display: none;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(5, 6, 26);
+    padding: 5px;
+
+}
+
+footer a:hover {
+    text-decoration:underline;
+    background: rgba(0, 0, 0, 0.507);
+    border-radius: 5px;
+}
